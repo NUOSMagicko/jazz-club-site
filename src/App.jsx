@@ -264,14 +264,14 @@ const ComingSoon = () => {
           />
         </Title>
         <Description className={isMobileNavVisible ? "hide" : ""}>
-          NUOS's Jazz Club is under development. We'll be here soon with our new
+          Our Jazz Club is under development. We'll be here soon with new
           events announcements.
         </Description>
       </Container>s 
       <Footer>
-      <div> <Description>NUOS Gmail  </Description><Description><Icon><FaEnvelope /></Icon>info@nuosmagicko.com</Description></div>
+      <div> <Description>Jazz Club's Gmail  </Description><Description><Icon><FaEnvelope /></Icon>info@nuosmagicko.com</Description></div>
         {/* <Description>NUOS Gmail : info@nuosmagicko.com</Description> */}
-        <div> <Description>NUOS Phone   </Description><Description><Icon><FaPhone /></Icon>+66922430157</Description></div>
+        <div> <Description>Jazz Club's Phone   </Description><Description><Icon><FaPhone /></Icon>+66922430157</Description></div>
        
       </Footer>
     </>
