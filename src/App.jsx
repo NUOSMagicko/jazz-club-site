@@ -273,7 +273,7 @@ const ComingSoon = () => {
         </Description>
         <Description className={isMobileNavVisible ? "hide" : ""}>
           Immerse yourself in captivating tunes and the unique ambiance of the
-          Cotton Club. Reserve now for a night of elegance and unforgettable
+          Cotton Club. Reserve now for a night of unforgettable
           entertainment.
         </Description>
       </Container>
