@@ -267,16 +267,14 @@ const ComingSoon = () => {
           />
         </Title>
         <Description className={isMobileNavVisible ? "hide" : ""}>
-          Experience the soul-stirring magic of live jazz at Bangkok's Cotton
-          Club! Join us for an unforgettable evening as sensational Jazz
-          Quartets takes the stage, weaving melodies that transport you to the
-          stars.
+          Experience live jazz magic at Bangkok's Cotton Club! An evening with
+          sensational Jazz Quartets awaits, transporting you through mesmerizing
+          melodies.
         </Description>
         <Description className={isMobileNavVisible ? "hide" : ""}>
-          Let the the melodies captivate you, and the ambiance
-          of the Cotton Club envelop you in an unforgettable night of musical
-          brilliance. Reserve your seat now for an evening of timeless elegance
-          and entertainment
+          Immerse yourself in captivating tunes and the unique ambiance of the
+          Cotton Club. Reserve now for a night of elegance and unforgettable
+          entertainment.
         </Description>
       </Container>
       s
