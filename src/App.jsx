@@ -237,7 +237,7 @@ const ComingSoon = () => {
       <NavBar>
         <Logo src={logoImage} alt="NUOS Logo" />
         <LgNavItems>
-          <LgNavItem href="#home">Home</LgNavItem>
+          <LgNavItem href="#home">NUOS</LgNavItem>
           <LgNavItem href="#about">About</LgNavItem>
           <LgNavItem href="#services">Services</LgNavItem>
           <LgNavItem href="#contact">Contact</LgNavItem>
