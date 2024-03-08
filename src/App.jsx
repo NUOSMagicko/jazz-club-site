@@ -40,43 +40,43 @@ const Container = styled.div`
 
 const Title = styled.div`
   font-weight: bold;
-  font-size: 40px;
-  margin-bottom: 20px;
+  font-size: 2.5rem;
+  margin-bottom: 1.25rem;
   color: #f8e604; // Ensure text color is set to white for contrast
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); // Add this line
+  text-shadow: 0.125rem 0.125rem 0.5rem rgba(0, 0, 0, 0.7); // Add this line
   z-index: 1;
   &.hide {
     display: none;
   }
   @media (max-width: 768px) {
     // Adjust for mobile devices
-    font-size: 22px; // Reduce padding on smaller screens
+    font-size: 1.375rem; // Reduce padding on smaller screens
   }
 `;
 
 const Description = styled.p`
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #f8e604; // Ensure text color is set to white for contrast
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); // Add this line
+  text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.7); // Add this line
   z-index: 1;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 0.9375rem;
+  margin-right: 0.9375rem;
   &.hide {
     display: none;
   }
   @media (max-width: 768px) {
     // Adjust for mobile devices
-    font-size: 14px; // Reduce padding on smaller screens
+    font-size: 0.875rem; // Reduce padding on smaller screens
   }
 `;
 
 const NavBar = styled.nav`
   box-sizing: border-box;
   width: 100%;
-  padding: 20px 10px;
+  padding: 1.25rem 0.625rem; /* 20px 10px */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -87,16 +87,16 @@ const NavBar = styled.nav`
   z-index: 2;
   @media (max-width: 768px) {
     // Adjust for mobile devices
-    padding: 10px 10px; // Reduce padding on smaller screens
+    padding: 0.625rem 0.625rem; /* 10px 10px */
   }
 `;
 
 const Logo = styled.img`
-  font-size: 24px;
+  /* font-size: 24px; */
   color: white;
-  height: 60px; // Adjust the height as needed
+  height: 3.75rem; /* 60px */
   width: auto; // This will maintain the aspect ratio of the image
-  margin-left: 20px;
+  margin-left: 1.25rem; /* 20px */
 `;
 
 const LgNavItems = styled.div`
@@ -113,19 +113,27 @@ const LgNavItems = styled.div`
 const LgNavItem = styled.a`
   color: #f8e604;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 1.125rem; // 18px converted to rem
   cursor: pointer;
   &:hover {
-    color: #ddd; // Change as needed
+    color: #f7f7f7; // Change as needed
   }
 `;
 
+
 const HamburgerIcon = styled.div`
   display: none; // Hidden by default
-  font-size: 24px;
+  font-size: 1.5rem; /* 24px */
   cursor: pointer;
   color: #f8e604;
-  padding: 5px;
+  padding: 0.3125rem; /* 5px */
+  transition: transform 0.3s;
+  &:hover {
+    color: #f7f7f7;
+    transform: translateY(
+      -2px
+    ); // Slightly raise the icon on hover for more depth
+  }
   @media (max-width: 768px) {
     display: block; // Only show on mobile devices
   }
@@ -173,28 +181,27 @@ const MobileNavItem = styled.a`
   font-size: 18px;
   cursor: pointer;
   &:hover {
-    color: #ddd; // Change as needed
+    color: #f7f7f7; // Change as needed
   }
 `;
 
 const CloseIcon = styled.div`
-  font-size: 24px;
+  font-size: 1.5rem; /* 24px */
   color: #f8e604;
   position: absolute;
-  top: 20px;
-  right: 10px;
-  margin-right: 20px;
+  top: 1.25rem; /* 20px */
+  right: 0.625rem; /* 10px */
+  margin-right: 1.25rem; /* 20px */
   cursor: pointer;
   // Add shadow for elevated effect
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); // Adjust as needed
   // Optional: add a transition for a smooth effect when interacting
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s;
 
   &:hover {
+    color: #f7f7f7;
     transform: translateY(
-      -2px
+      -0.125rem
     ); // Slightly raise the icon on hover for more depth
-    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6); // Make the shadow darker on hover
   }
 `;
 
@@ -212,13 +219,14 @@ const Footer = styled.nav`
   z-index: 2;
   @media (max-width: 768px) {
     // Adjust for mobile devices
-    padding: 10px 10px; // Reduce padding on smaller screens
+    padding: 0.625rem 0.625rem; // 10px 10px converted to rem
   }
 `;
 
+
 const Icon = styled.span`
   color: #f8e604; // The specified yellow color
-  margin-right: 8px; // Adds some spacing between the icon and the text
+  margin-right: 0.5rem; // 8px converted to rem
 `;
 
 const ComingSoon = () => {
@@ -273,8 +281,7 @@ const ComingSoon = () => {
         </Description>
         <Description className={isMobileNavVisible ? "hide" : ""}>
           Immerse yourself in captivating tunes and the unique ambiance of the
-          Cotton Club. Reserve now for a night of unforgettable
-          entertainment.
+          Cotton Club. Reserve now for a night of unforgettable entertainment.
         </Description>
       </Container>
       s
