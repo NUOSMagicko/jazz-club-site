@@ -1,24 +1,20 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
-import Logo from "./Logo";
-import LgNavItemsContainer from "./LgNavItemsContainer";
-import HamburgerIcon from "./HamburgerIcon";
 
 const StyledNavBar = styled.nav`
   box-sizing: border-box;
   width: 100%;
-  padding: 1.25rem 0.625rem; /* 20px 10px */
+  padding: 1.25rem 0.625rem; 
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.2); // Faint transparent background
+  background-color: rgba(255, 255, 255, 0.2); 
   position: fixed;
   top: 0;
   left: 0;
   z-index: 2;
   @media (max-width: 768px) {
-    // Adjust for mobile devices
-    padding: 0.625rem 0.625rem; /* 10px 10px */
+    padding: 0.625rem 0.625rem; 
   }
 `;
 

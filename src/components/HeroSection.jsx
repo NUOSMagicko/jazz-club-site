@@ -7,19 +7,18 @@ import mainBackground from "../assets/main_background.jpg";
 
 const StyledHeroSection = styled.div`
   box-sizing: border-box;
-  max-width: 100%; // Instead of width, ensures it doesn't exceed viewport width
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-image: url(${mainBackground}); // Add this line
-  background-size: cover; // Cover the entire page
-  background-position: center; // Center the background image  color: white;
+  background-image: url(${mainBackground});
+  background-size: cover; 
+  background-position: center; 
   text-align: center;
-  position: relative; // Make sure this line is added
+  position: relative; 
   &:before {
-    // Add this block
     content: "";
     position: absolute;
     top: 0;
@@ -31,7 +30,7 @@ const StyledHeroSection = styled.div`
       0,
       0,
       0.5
-    ); // Adjust the color and opacity to your liking
+    );
     z-index: 0;
   }
 `;

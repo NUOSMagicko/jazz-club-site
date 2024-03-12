@@ -7,7 +7,7 @@ const StyledMobileNavItem = styled.a`
   font-size: 18px;
   cursor: pointer;
   &:hover {
-    color: #f7f7f7; // Change as needed
+    color: #f7f7f7; 
   }
 `;
 const MobileNavItem = ({children, href}) => {

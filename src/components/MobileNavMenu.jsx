@@ -7,12 +7,12 @@ const StyledMobileNavMenu = styled.div`
   right: 0;
   height: 100vh;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.4); // Semi-transparent black background
+  background-color: rgba(0, 0, 0, 0.4); 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 20px; // Space for the close icon
+  padding-top: 20px; 
   transform: translateX(100%);
   transition: transform 0.3s ease-in-out;
   z-index: 5;

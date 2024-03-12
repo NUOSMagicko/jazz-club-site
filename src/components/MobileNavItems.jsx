@@ -8,10 +8,9 @@ const StyledMobileNavItems = styled.div`
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 40%; // Adjust based on your needs
+  width: 40%; 
   @media (min-width: 768px) {
-    // Adjust for mobile devices
-    display: none; // Reduce padding on smaller screens
+    display: none;
   }
 `;
 

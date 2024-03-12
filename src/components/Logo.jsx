@@ -1,13 +1,12 @@
-// Logo.jsx
 import React from 'react';
 import styled from 'styled-components';
-import logoImage from '../assets/jazzLogo.png'; // Adjust the path as needed
+import logoImage from '../assets/jazzLogo.png'; 
 
 const StyledLogo = styled.img`
   color: white;
-  height: 3.75rem; /* 60px */
-  width: auto; // This will maintain the aspect ratio of the image
-  margin-left: 1.25rem; /* 20px */
+  height: 3.75rem; 
+  width: auto; 
+  margin-left: 1.25rem;
 `;
 
 const Logo = () => {
