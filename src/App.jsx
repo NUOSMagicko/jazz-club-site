@@ -16,7 +16,7 @@ function App() {
           {/* Define your routes here */}
           <Route path="/" element={<LandingPage />} />
           {/* You can add more Route components here to define other paths */}
-          <Route path="/coffeemenu" element={<CoffeeMenuPage />} />
+          <Route path="/eveningmenu" element={<CoffeeMenuPage />} />
         </Routes>
       </NavProvider>
     </Router>

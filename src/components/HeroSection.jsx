@@ -43,7 +43,7 @@ const HeroSection = ({isMobileNavVisible}) => {
       <Description isMobileNavVisible={isMobileNavVisible}>
   Discover Cotton Club's culinary innovation amidst a neon glow. Our menu transforms dining into a sensory journey.
 </Description>
-<NavigationButton isMobileNavVisible={isMobileNavVisible} path={"coffeemenu"}>View Evening Menu</NavigationButton>
+<NavigationButton isMobileNavVisible={isMobileNavVisible} path={"eveningmenu"}>View Evening Menu</NavigationButton>
     </StyledHeroSection>
   );
 };
