@@ -1,37 +1,26 @@
-import React, { useState } from "react";
-import Logo from "./components/Logo";
-import LgNavItemsContainer from "./components/LgNavItemsContainer";
-import HamburgerIcon from "./components/HamburgerIcon";
-import NavBar from "./components/NavBar";
-import MobileNavMenu from "./components/MobileNavMenu";
-import CloseIcon from "./components/CloseIcon";
-import MobileNavItems from "./components/MobileNavItems";
-import HeroSection from "./components/HeroSection";
-import Footer from "./components/Footer";
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
+import { NavProvider } from "./context/NavContext"; // Make sure the path is correct
+import CoffeeMenuPage from "./pages/CoffeeMenuPage/CoffeeMenuPage";
+import LandingPage from "./pages/LandingPage/LandingPage";
 
-const ComingSoon = () => {
-  const [isMobileNavVisible, setIsMobileNavVisible] = useState(false);
-
+function App() {
   return (
-    <>
-      <NavBar>
-        <Logo />
-        <LgNavItemsContainer />
-        <HamburgerIcon
-          isMobileNavVisible={isMobileNavVisible}
-          setIsMobileNavVisible={setIsMobileNavVisible}
-        >
-          ☰
-        </HamburgerIcon>
-      </NavBar>
-      <MobileNavMenu isMobileNavVisible={isMobileNavVisible} >
-        <CloseIcon setIsMobileNavVisible={setIsMobileNavVisible} />
-        <MobileNavItems/>
-      </MobileNavMenu>
-      <HeroSection isMobileNavVisible={isMobileNavVisible} />
-      <Footer/>
-    </>
+    <Router>
+      <NavProvider> {/* Wrap the Routes with NavProvider */}
+        <Routes>
+          {/* Define your routes here */}
+          <Route path="/" element={<LandingPage />} />
+          {/* You can add more Route components here to define other paths */}
+          <Route path="/coffeemenu" element={<CoffeeMenuPage />} />
+        </Routes>
+      </NavProvider>
+    </Router>
   );
-};
+}
 
-export default ComingSoon;
+export default App;

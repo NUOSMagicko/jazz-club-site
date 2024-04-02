@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledLgNavItem = styled.a`
-  color: #f8e604;
+  color: #A7C7E7;
   text-decoration: none;
   font-size: 1.125rem;
   cursor: pointer;

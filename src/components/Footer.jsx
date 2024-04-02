@@ -22,7 +22,7 @@ const StyledFooter = styled.nav`
 `;
 
 const Icon = styled.span`
-  color: #f8e604;
+  color: #A7C7E7;
   margin-right: 0.5rem;
 `;
 
@@ -31,7 +31,7 @@ const Footer = () => {
     <StyledFooter>
       <div>
         {" "}
-        <Description>Cotton Club's Gmail </Description>
+        {/* <Description>Blue Elektra's Gmail </Description> */}
         <Description>
           <Icon>
             <FaEnvelope />
@@ -41,12 +41,12 @@ const Footer = () => {
       </div>
       <div>
         {" "}
-        <Description>Cotton Club's Phone </Description>
+        {/* <Description>Blue Elektra's Phone </Description> */}
         <Description>
           <Icon>
             <FaPhone />
           </Icon>
-          +66922430157
+          02-207-8681
         </Description>
       </div>
     </StyledFooter>

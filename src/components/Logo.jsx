@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import logoImage from '../assets/jazzLogo.png'; 
+import logoImage from '../assets/images/jazzLogo.png'; 
 
 const StyledLogo = styled.img`
   color: white;
@@ -10,7 +10,7 @@ const StyledLogo = styled.img`
 `;
 
 const Logo = () => {
-  return <StyledLogo src={logoImage} alt="NUOS Logo" />;
+  return <StyledLogo src={logoImage} alt="Blue Elektra Logo" />;
 };
 
 export default Logo;

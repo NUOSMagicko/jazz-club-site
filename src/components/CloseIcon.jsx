@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const StyledCloseIcon = styled.div`
   font-size: 1.5rem;
-  color: #f8e604;
+  color: #A7C7E7;
   position: absolute;
   top: 1.25rem;
   right: 0.625rem;

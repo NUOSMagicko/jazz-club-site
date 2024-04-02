@@ -2,7 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import Title from "./Title";
 import Description from "./Description";
-import mainBackground from "../assets/main_background.jpg";
+import mainBackground from "../assets/images/main_background.jpg";
+import NavigationButton from "./NavigationButton";
 
 
 const StyledHeroSection = styled.div`
@@ -13,11 +14,11 @@ const StyledHeroSection = styled.div`
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-image: url(${mainBackground});
+  /* background-image: url(${mainBackground}); */
   background-size: cover; 
   background-position: center; 
   text-align: center;
-  position: relative; 
+  /* position: relative; 
   &:before {
     content: "";
     position: absolute;
@@ -32,7 +33,7 @@ const StyledHeroSection = styled.div`
       0.5
     );
     z-index: 0;
-  }
+  } */
 `;
 
 const HeroSection = ({isMobileNavVisible}) => {
@@ -40,14 +41,9 @@ const HeroSection = ({isMobileNavVisible}) => {
     <StyledHeroSection>
       <Title isMobileNavVisible={isMobileNavVisible} />
       <Description isMobileNavVisible={isMobileNavVisible}>
-        Experience live jazz magic at Bangkok's Cotton Club! An evening with
-        sensational Jazz Quartets awaits, transporting you through mesmerizing
-        melodies.
-      </Description>
-      <Description isMobileNavVisible={isMobileNavVisible}>
-        Immerse yourself in captivating tunes and the unique ambiance of the
-        Cotton Club. Reserve now for a night of unforgettable entertainment.
-      </Description>
+  Discover Cotton Club's culinary innovation amidst a neon glow. Our menu transforms dining into a sensory journey.
+</Description>
+<NavigationButton isMobileNavVisible={isMobileNavVisible} path={"coffeemenu"}>View Evening Menu</NavigationButton>
     </StyledHeroSection>
   );
 };

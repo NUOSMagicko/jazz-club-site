@@ -7,7 +7,8 @@ const StyledMobileNavMenu = styled.div`
   right: 0;
   height: 100vh;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.4); 
+  background-color: rgba(0, 0, 0, 0.4);
+  color:#A7C7E7; 
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+h1, h2, .footerBold {
+    font-family: 'Playfair Display', serif;
+}
+
+body, p, b, .item p, footer {
+    font-family: 'Roboto', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+body {
+    /* border: 2px solid white; */
+    background-image: url('../../assets/images/main_background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 0; /* Updated from 20px to remove any default padding */
+    position: relative;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    display: flex; /* Enables flexbox layout */
+    justify-content: center; /* Centers children horizontally */
+    align-items: center;
+    margin: 0; /* Removes default margin */
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(
+      0,
+      0,
+      0,
+      0.3
+    );
+    z-index: -1;
+  }
+}
+
+h1 {
+    font-size: 2.5rem; /* Was 40px */
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 1.875rem; /* Was 30px */
+}
+
+.established {
+    font-style: italic;
+}
+
+h1, h2, p, b {
+    text-align: center;
+}
+
+.menu {
+    border-radius: 35px;
+    margin-top: 2vh;
+    width: 100%;
+    margin-bottom: 2vh;
+    background-color: #f8e604;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    /* max-width: 500px; */
+    overflow-y: scroll; 
+    max-height: 85vh; 
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+hr {
+    height: 2px;
+    background-color: #3E2723;
+    border-color: #3E2723;
+}
+
+.bottomLine {
+    margin-top: 25px;
+}
+
+.item p {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 1.125rem; /* Was 18px */
+}
+
+.flavor, .dessert {
+    text-align: left;
+    width: 75%;
+}
+
+.price {
+    text-align: right;
+    width: 25%;
+}
+
+/* FOOTER */
+
+footer {
+    font-size: 0.875rem; /* Was 14px */
+}
+
+.address {
+    margin-bottom: 5px;
+}
+
+/* a {
+    color: black;
+}
+
+a:visited {
+    color: black;
+} */
+
+a:hover {
+    color: #3E2723;
+}
+
+a:active {
+    color: #3E2723;
+}
+
+/* General Styles */
+/* Skipping general and unchanged styles for brevity */
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem; /* Smaller size for mobile */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Smaller size for mobile */
+    }
+
+    .item p, footer {
+        font-size: 1rem; /* Adjusting text for readability on mobile */
+    }
+
+    .menu {
+        /* border:2px solid white; */
+        padding: 20px; /* Adjust padding for mobile */
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        max-height: 60vh; /* Adjust max height for better visibility */
+    }
+
+    body {
+        padding: 10px; /* Reduce body padding on smaller screens */
+    }
+}
+
